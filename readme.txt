@@ -21,3 +21,19 @@
 
 4. ผลลัพธ์ที่ควรได้:
 - จะเห็นข้อมูล JSON ที่รวมชื่อของ Philia และ Mia พร้อมรายการไอเทมศักดิ์สิทธิ์
+
+Project Tree
+grpc-microservice-project/
+├── proto/                      # เก็บไฟล์ต้นฉบับ Protocol Buffers 
+│   └── user.proto              # กำหนด Service และ Message schema
+├── generated/                  # ไฟล์ Python ที่ถูก Generate ออกมา 
+│   ├── __init__.py
+│   ├── user_pb2.py            # Message classes
+│   └── user_pb2_grpc.py       # Server/Client stubs
+├── app/                        # Source Code หลักของ Application
+│   ├── __init__.py
+│   ├── main.py                # FastAPI (Gateway) ที่เรียกใช้ gRPC client
+│   ├── grpc_server.py         # gRPC Server implementation (Business Logic หลัก)
+│   └── grpc_client.py         # Script สำหรับทดสอบเชื่อมต่อ gRPC
+├── requirements.txt            # รายชื่อ Libraries (fastapi, grpcio, etc.)
+└── README.md                   # เอกสารอธิบายโปรเจกต์

@@ -16,6 +16,7 @@
 - ติดตั้ง Docker และ Docker Compose
 - เปิด Terminal ในโฟลเดอร์หลัก
 - รันคำสั่ง: docker-compose up --build
+- เข้าไปที่ http://localhost:8001/dashboard ผ่าน Browser จะพบหน้า dashboard ที่สวยงาม **แนะนำให้เข้าไปที่หน้านี้**
 - เข้าไปที่ http://localhost:8001/saints-profile ผ่าน Browser
 - หรือเข้าไปที่ http//localhost:8001/docs
 
